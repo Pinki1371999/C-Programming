@@ -1,0 +1,952 @@
+1: #include <iostream>
+using namespace std;
+int main ()
+{
+  int year;
+  cout << "enter year";
+  cin >> year;	
+  if (year % 400 == 0)
+    cout << "leap year";
+  else if (year % 100 == 0)
+    cout << "not leap year";
+  else if (year % 4 == 0)
+    cout << "year is leap";
+  else
+    cout << "not leap year";
+  return 0;
+}
+2:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"hello pinki";
+    return 0;
+   
+}
+3:
+int main()
+{
+    int a,b;
+    cout<<"enter two numbers";
+    cin>>a>>b;
+    cout<<a+b;
+    cout<<endl;
+   cout<< a-b;
+   cout<<"\n";
+   cout<< a/b<<"\n";
+   cout<< a*b<<endl;
+   cout<< a%b;
+return 0;
+}
+4
+    int main()
+    {
+        char grade;
+        cout<<"enter the grade";
+       
+        cin>>grade;
+        cout<<grade;
+        return 0;
+       
+    }
+   
+    int main()
+    {
+        int a;
+        float b;
+        char c;
+        long e;
+        long int d;
+    double f;
+        cin>>a>>b>>c>>d>>e>>f;
+        cout<<a<<endl<<b<<"\n"<<c<<endl<<d<<endl<<e<<"\n"<<f;
+       
+       
+        return 0;
+    }
+   
+    int main()
+    {
+        int a,b;
+        cout<<"enter two numbers";
+        cin>>a>>b;
+        int A,B;
+        A=a*b;
+        B=2*(a+b);
+        cout<<"area of rectangle"<<A;
+        cout<<endl;
+        cout<<"perimeter of rectangle"<<B;
+        return 0;       
+    }
+   
+    int main()
+    {
+        int r;
+        cout<<"enter number";
+        cin>>r;
+        int cr,di;
+        cr=3.14*r*r;
+        di=2*(22/7)*r;
+        cout<<cr<<endl<<di;
+       
+        return 0;
+    }
+   
+    int main()
+    {
+        int b,h;
+        cout<<"enter numbers";
+        cin>>b>>h;
+        float A;
+        A=(float)1/2*b*h;
+        cout<<A;
+        return 0;
+       }
+   
+    int main()
+    {
+      int a,b;
+      cout<<"enter numbers";
+      cin>>a>>b;
+      int c;
+      c=180-(a+b);
+      cout<<"3rd anle of triangle"<<c;
+        return 0;
+    }  
+   
+    int main()
+    {
+       int celsius;
+       cout<<"enter celsius";
+       cin>>celsius;
+       float f;
+       f=(float)(celsius*9/5)+32;
+       cout<<"fahrenheit="<<f;
+        return 0;
+    }
+   
+   
+    int main()
+    {
+        int mm;
+        float km;
+        cout<<"enter lenth in milileater";
+        cin>>mm;
+        km=(float)mm/1000;
+        cout<<"lenth conversion in km"<<km;
+        return 0;
+    }
+
+    int main()
+    {
+     int day,weak,year;
+     cout<<"enter days";
+     cin>>day;
+     year=day/365;
+     day=day-365*year;
+     weak=day/7;
+     day=day-7*weak;
+     cout<<day<<endl<<weak<<endl<<year;     
+        return 0;
+    }
+
+    #include<math.h>
+    int main()
+    {
+        int a,b ,c;
+        cout<<"enter number";
+        cin>>a;
+        cout<<"enter power";
+        cin>>b;
+        c=pow(a,b);
+        cout<<"power of number"<<c;       
+        return 0;
+    }
+
+   
+ #include<math.h>   
+    int main()
+    {
+        int a;
+        float c;
+        cout<<"enter number";
+        cin>>a;
+        c=sqrt(a);
+        cout<<"square root="<<c;
+        return 0;
+    }
+
+    int main()
+    {
+   
+        int p,r,t,s;
+        cout<<"enter number";
+        cin>>p>>r>>t;
+        s=(p*r*t)/100;
+       
+       cout<<"simple interest"<<s;
+       
+        return 0;
+    }
+    
+
+    #include<math.h>
+    int main()
+    {
+       int p,r,t, ci;
+       cout<<"enter number";
+       cin>>p>>r>>t>>t;
+       ci=p*(pow((1+r/100),t));
+       cout<<"coumpound interst"<<ci;
+        return 0;       
+    }
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int a;
+  cout<<"enter number";
+  cin>>a;
+  if(a%2==0){
+  cout<<"even number";
+      
+  }
+  else
+  {
+      cout<<"odd number"
+  }
+  
+     return 0;
+}
+
+
+
+
+
+int main()
+{
+    int num1,num2,num3,max ,max1;
+    cout<<"enter number";
+    cin>>num1>>num2>>num3;
+max=(num1>num2? num1:num2);
+max1=(max>num3? max:num3);
+    cout<<max1;
+    return 0;
+}
+
+int main()
+{
+    int num1,num2,num3,max;
+    cout<<"enter number";
+    cin>>num1>>num2>>num3;
+    max=(num1>num2&&num1>num3)? num1:(num2>num3)?num2:num3;
+    cout<<"max of three numbers"<<max;
+    
+    
+    return 0;
+}
+
+int main()
+{
+    char ch;
+    cout<<"enter character";
+    cin>>ch;
+    if((ch>='a' && ch<='z')||(ch>='A' && ch<='z'))
+    cout<<"alphabet number is="<<endl<<ch;
+    else
+    cout<<"alphabet number is not="<< endl<<ch;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{  
+   int num1,num2,num3;
+   cout<<"enter number";
+   cin>>num1>>num2>>num3;
+   if((num1>num2) && (num1>num3))
+   {
+       cout<<num1;
+      
+   }
+   else if((num2>num1) && (num2>num3))
+   {
+      
+       cout<<num2;SS
+   }
+   else 
+   {
+       cout<<num3;
+   }
+    return 0;
+    
+}
+int main()
+{
+    int num;
+    cout<<"enter number";
+    cin>>num;
+    if(num>0)
+    {
+        cout<<"number is positive";
+    }
+    else if(num<0)
+    {
+        cout<<"number is negative";
+    }
+     else
+    {
+        cout<<"number is equal to Zero";
+    }
+   
+    return 0;
+}
+
+int main()
+{
+    int num;
+    cout<<"enter number";
+    cin>>num;
+    if((num % 5==0) && (num % 11==0))
+    {
+        cout<<"number is divisual by 5 and 11 ";
+    }
+else 
+{
+    cout<<"number is not divisual by 5 and 11";
+}
+return 0;
+}
+
+int main()
+{
+  int num;
+  cout<<"enter any number";
+  cin>>num;
+  if(num % 2 == 0)
+  {
+      cout<<"number is even";
+  }
+  else{
+      cout<<"number is odd";
+  }
+    return 0;
+    
+}
+
+int main()
+{
+    int y;
+    cout<<"enter year";
+    cin>>y;
+    if(y%400==0)
+    {
+        cout<<"leap year";
+    }
+    else if(y%100==0)
+    {
+        cout<<"not leap year";
+        
+    }
+    else if(y%4==0)
+    
+    {
+        cout<<"leap year";
+    }
+    else{
+        cout<<"not leap year";
+    }
+    return 0;
+    
+}
+
+int main()
+{
+    char ch;
+    cout<<"enter any character";
+    cin>>ch;
+    if((ch>='a'&& ch<='z')||(ch>='A' && ch<='Z'))
+    {
+        cout<<"alphabet character";
+    }
+    else{
+        cout<<"not alphabet character";
+    }
+    return 0;
+}
+int main()
+{
+    char ch;
+    cout<<"enter any character";
+    cin>>ch;
+    if(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o' || ch=='u')
+    {
+        cout<<"vewole";
+        
+    }
+    else if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+    {
+        cout<<"consonent";
+    }
+else{
+    cout<<"not alphabet character";
+}
+return 0;
+}
+int main()
+{
+    char ch;
+    cout<<"enter number";
+    cin>>ch;
+    if((ch>='a' && ch<='z') || (ch>='A' && ch<= 'Z'))
+    {
+        cout<<"alphabet";
+        
+    }
+    else if(ch>='0' && ch<='9')
+{
+    cout<<"digit";
+}
+else{
+    cout<<"special character";
+}
+return 0;
+}
+
+int main()
+{
+    char ch;
+    cout<<"enter any character";
+    cin>>ch;
+    if(ch>='A' && ch<='Z')
+    {
+        cout<<"upper case alpbabet";
+    }
+    else if (ch>='a' && ch<='z'){
+        cout<<"lowere case alphabet";
+    }
+    else{
+        cout<<"not alpbabet";
+    }
+    return 0;
+}
+#include<iostream>
+using namespace std;
+/*
+int main()
+{
+    int sp,cp,amt;
+    cout<<"enter selling price and cost price";
+    cin>>sp>>cp;
+    if(sp>cp)
+    {
+        amt=sp-cp;
+        cout<<"profit="<<amt;
+        
+    }
+    else if(cp>sp)
+    {
+        amt=cp-sp;
+        cout<<"loss="<<amt;
+    }
+    else
+    {
+        cout<<"no profit and loss";
+   
+    }
+    return 0;
+}*/
+int main()
+{
+    int month;
+    cout<<"enter month (1-12):";
+    cin>>month;
+    if(month==1)
+    {
+      cout<<"31 days";  
+    }
+    else if(month==2)
+    {
+        cout<<"28 days and 29 days";
+    }
+    else if(month==3)
+    {
+         cout<<"31 days";
+    }
+    else if(month==4)
+    {
+        cout<<"30 days";
+        
+    }
+    else if(month==5)
+{
+    cout<<"31 days";
+}  
+else if(month==6)
+{
+    cout<<"30 days";
+    
+}
+    else if(month==7)
+    {
+        cout<<"31 days";
+    }
+    else if(month==8)
+    {
+        cout<<"30 days";
+    }
+    else if(month==9)
+    {
+        cout<<"31 days";
+    }
+    else if(month==10)
+    {
+        cout<<"30 days";
+    }
+    else if(month==11)
+    {
+        cout<<"31 days";
+    }
+    else if(month==12)
+    {
+        cout<<"30 days";
+    }
+    else
+    {
+        cout<<"error";
+    }
+    return 0;
+}
+/******************************************************************************
+
+                             
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int month;
+    cout<<"enter month (1-12)";
+    cin>>month;
+    
+    if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+    {
+        cout<<"31 days";
+    }
+    else if(month==4 || month==6 || month==9 || month==11)
+{
+    cout<<"30 days";
+    
+}       
+    else if(month==2)
+    {
+        cout<<"29 days or 31 days";
+    }
+    else{
+        cout<<"invalid days";
+    }
+
+
+    return 0;
+}
+	#include<iostream>
+using namespace std;
+int main()
+{
+    int weak;
+    cout<<"enter weak";
+    cin>>weak;
+    switch(weak)
+    {
+        case 1:
+        cout<<"monday";
+        break;
+        case 2:
+        cout<<"tuesday";
+        break;
+        case 3:
+        cout<<"wed";
+        break;
+        case 4:
+        cout<<"thru";
+        break;
+        case 5:
+        cout<<"friday";
+        break;
+        case 6:
+        cout<<"sturday";
+        break;
+        case 7:
+        cout<<"sunday";
+        break;
+        default:
+        cout<<"invalid days";
+        break;
+    }
+    return 0;
+}
+/******************************************************************************
+
+                    
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int month;
+cout<<"enter number";
+cin>>month;
+switch(month)
+{
+case 1:
+cout<<"january";
+break;
+case 2:
+cout<<"feb";
+break;
+case 3:
+cout<<"march";
+break;
+case 4:
+cout<<"april";
+break;
+case 5:
+cout<<"may";
+break;
+case 6:
+cout<<"june";
+break;
+case 7:
+cout<<"july";
+case 8:
+cout<<"augst";
+break;
+case 9:
+cout<<"sep";
+case 10:
+cout<<"oct";
+case 11:
+cout<<"nov";
+case 12:
+cout<<"decm";
+break;
+default:
+cout<<"invalid month";
+break;
+}
+    return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+ char ch;
+ cout<<"enter any character";
+ cin>>ch;
+ switch(ch)
+ {
+     case'a':
+     case'e':
+     case'i':
+     case'o':
+     case'u':
+     cout<<"vowle";
+     break;
+    case 'b':
+    case 'c':
+    case 'd':
+    case 'f':
+    case 'g':
+    case 'h':
+    case 'j':
+    case 'k':
+    case 'l':
+    case 'm':
+    case 'n':
+    case 'p':
+    case 'q':
+    case 'r':
+    case 's':
+    case 't':
+    case 'v':
+    case 'w':
+    case 'x':
+    case 'y':
+    case 'z':
+    cout<<"constant";
+    break;
+     default:
+    cout<<"nvalid character";
+     break;
+ }
+ return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+ int num1,num2;
+ cout<<"enter number";
+ 
+ cin>>num1>>num2;
+ switch(num1>num2)
+ {
+ case 0:
+ cout<<"maximum number="<<num1;
+ break;
+ case 1:
+ cout<<"maimumx number="<<num2;
+ break;
+ default :
+ cout<<"invalid number";
+ }
+ return 0;
+ 
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num1;
+    cout<<"enter number";
+    cin>>num1;
+    switch(num1>0)
+    {
+        case 1:
+        cout<<"number is positive";
+        break;
+    }
+    switch(num1<0)
+    {
+        case 1:
+        cout<<"number is negative";
+        break;
+    }
+    switch(num1==0)
+    {
+        case 1:
+        cout<<"number is equal to zero";
+        break;
+    }
+    return 0;
+    
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+char op;
+float num1,num2,results;
+cout<<"enter first number :- ";
+cin>>num1;
+cout<<"enter Second number :- ";
+cin>>num2;
+cout<<"enter operator :- ";
+cin>>op;
+
+switch(op)
+{
+    case '+':
+    results=num1+num2;
+    cout<<results;
+    break;
+    case '-':
+    results=num1-num2;
+    cout<<results;
+    break;
+    case '*':
+    results=num1*num2;
+    cout<<results;
+    break;
+    case '/':
+    results=num1/num2;
+    cout<<results;
+    break;
+    case '%':
+    cout<<results;
+    break;
+}
+return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n ,i;
+    cout<<"enter  any number";
+    cin>>n;
+    for(i=1 ; i<=n; i++)
+    {
+        cout<<i<<"\n";
+        
+    }
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char ch;
+    cout<<"enter any character";
+    cin>>ch;
+    if(ch >=97 && ch <=122)
+    
+    {
+        cout<<"small character"<<ch<<"\n";
+    }
+    else if(ch >=65 && ch <=90)
+    {
+        cout<<"capital character"<<ch<<"\n";
+    }
+    else
+    {
+        cout<<"Enter valid data";
+    }
+    return 0;
+}
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n;
+    cout<<"enter number";
+    cin>>n;
+    
+    for(i=1; i<=n; i++)
+    {
+        
+    
+    if(i%2==0)
+    {
+        cout<<i<<" even number\n";
+    }
+    }
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,i,sum=0;
+    cout<<"enter any number\n";
+    cin>>n;
+    for(i=1; i<=n; i++)
+{
+    sum=sum+i;
+} 
+cout<<"Sum = "<<sum;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,i,sum=0;
+    cout<<"enter any number\n";
+    cin>>n;
+    for(i=1; i<=n; i++)
+{
+    if(i%2!=0)
+    sum=sum+i;
+}
+cout<<"Sum = "<<sum;
+
+    return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n,multi=1;
+    cout<<"enter number\n";
+    cin>>n;
+    for(i=1; i<=n; i++)
+    {
+        if(i%2!=0)
+        multi=multi*i;
+        
+    }
+    cout<<"multi="<<multi;
+
+
+return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long num;
+    int count=0;
+    cout<<"enter number";
+    cin>>num;
+    
+    do
+    {
+        count++;
+        num=num/10;
+        
+    }while(num!=0);
+    cout<<"num="<<count;
+    return 0;
+}
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int num,i;
+cout<<"enter any number";
+cin>>num;
+for(i=1;i<=10;i++)
+{
+
+cout<<num<<'*'<<i<<'='<<num*i<<endl;
+}
+    return 0;
+}
+#include<iostream>
+using namespace std;
+
+    int main()
+    {
+    
+    int num,last;
+    cout<<"enter number";
+    cin>>num;
+    last=num%10;
+    while(num>10)
+    {
+        num=num/10;
+        
+    }
+    cout<<"the frist number is="<<num<<endl;
+    cout<<"the last dist of number is="<<last<<endl;
+
+return 0;
+}
