@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int i,j,k=5,x;
+    for(i=1;i<=k;i++)
+    {
+        x=i;
+        for(j=1;j<=5;j++)
+        {
+            cout<<x<<" ";
+            x=x+5;
+        }
+        cout<<"\n";
+    }
+
+    return 0;
+}
+OUTPUT-:
+1 6 11 16 21 
+2 7 12 17 22 
+3 8 13 18 23 
+4 9 14 19 24 
+5 10 15 20 25
