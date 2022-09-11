@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int row,col,hig,len,max,min;
+    cout<<"Enter size of all four dimention:-\n";
+    cin>>row>>col>>hig>>len;
+    int arr[row][col][hig][len];
+    cout<<"Enter your "<<row*col*hig*len<<" Numbers :-\n";
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            for(int k=0;k<hig;k++)
+            {
+                for(int l=0; l<len; l++)
+                {
+            cin>>arr[i][j][k][l];
+                }
+            }
+        }
+    }
+    max=arr[0][0][0][0];
+    min=arr[0][0][0][0];
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            for(int k=0;k<hig;k++)
+            {
+                for(int l=0;l<len;l++)
+                {
+            if(max<=arr[i][j][k][l])
+            max=arr[i][j][k][l];
+            if(min>=arr[i][j][k][l])
+            min=arr[i][j][k][l];
+                }
+            }
+        }
+    }
+    cout<<"Maximum number="<<max;
+    cout<<"\nMinimum number="<<min;
+  return 0;
+}
+OUTPUT-:
+Depends on user input.
