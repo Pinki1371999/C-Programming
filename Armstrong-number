@@ -1,0 +1,28 @@
+
+    #include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,p,sum=0;
+    cout<<"enter 3 digit number";
+    cin>>n;
+    i=n;
+    while(n>0)
+    {
+       p= n%10;
+       sum=sum+p*p*p;
+        n=n/10;
+    }
+    if(i==sum)
+    {
+        cout<<i<<" is Armstrong number";
+    }
+    else
+    {
+        cout<<i<<" is not Armstrong number";
+    }
+    
+    return 0;
+}
+OUTPUT-:
+dependns on user.
