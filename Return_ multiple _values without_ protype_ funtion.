@@ -1,0 +1,19 @@
+//Return multiple values without protype funtion.
+#include <iostream>
+using namespace std;
+int sum(int x)
+{
+ if(x==10)   
+return(200);
+else if(x==30)
+return(400);
+else
+return(500);
+}
+int main()
+{
+    cout<<sum(10)<<endl;
+    cout<<sum(30)<<endl;
+    cout<<sum(5);
+
+}
