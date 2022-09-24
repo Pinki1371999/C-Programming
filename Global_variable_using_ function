@@ -1,0 +1,14 @@
+# include<iostream>
+using namespace std;
+int x=10;
+void hello()
+{
+    cout<<x;
+
+}
+int main()
+{
+    int x=30;
+    cout<<x;
+return 0;
+}
