@@ -1,0 +1,65 @@
+//Function
+#include <iostream>
+using namespace std;
+void Non_parameter_Non_Return()
+{
+    cout<<"\nThis is Non_parameter_Non_Return";
+}
+
+int Non_parameter_Return()
+{
+    cout<<"\nThis is Non_parameter_Return";
+    return 0;
+}
+
+void parameter_Non_Return(int a)
+{
+    cout<<"\nThis is parameter_Non_Return your value="<<a;
+}
+
+int parameter_Return(int a)
+{
+    cout<<"\nThis is parameter_Return Square of number = ";
+    return a*a;
+}
+
+int parameter_Return_Recusive(int a)
+{
+    if(a==1)
+    {
+        return 1;
+    }
+    else
+    {
+    return a*parameter_Return_Recusive(a-1);
+    }
+}
+
+void Call_by_value_no_return(int a)
+{
+    cout<<"\nQube of a number ="<<a*a*a;
+}
+
+void Call_by_reference_no_return(int *x)
+{
+    *x+=1;
+}
+int main()
+{
+
+    int x;
+    cout<<"Enter a value = ";
+    cin>>x;
+    Non_parameter_Non_Return();
+    Non_parameter_Return();
+    parameter_Non_Return(x);
+    cout<<parameter_Return(x);
+    cout<<"\nFactor = "<<parameter_Return_Recusive(x);
+    Call_by_value_no_return(x);
+    Call_by_reference_no_return(&x);
+    cout<<"\nIncrement by 1 x= "<<x;
+    return 0;
+}
+
+OUTPUT :- 
+Depends on user input.
