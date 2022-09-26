@@ -1,0 +1,29 @@
+// iterators in vector
+#include <iostream>
+#include <vector>
+ 
+using namespace std;
+ 
+int main()
+{
+    vector<int> ver;
+    int j,k;
+    cout<<"How many numbers you want to enter = ";
+    cin>>k;
+    for(int i= 1;i<=k;i++)
+    {
+        cin>>j;
+        ver.push_back(j);
+    }
+    cout<<"\nYour number = ";
+    for(auto i=ver.begin();i !=ver.end();i++)
+    {
+        cout<<*i<<" ";
+    }
+    cout<<"\nReverse of it = ";
+     for(auto i=ver.rbegin();i !=ver.rend();i++)
+    {
+        cout<<*i<<" ";
+    }
+    return 0;
+}
