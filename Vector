@@ -15,6 +15,10 @@ int main()
         cin>>j;
         ver.push_back(j);
     }
+    if (ver.empty() == false)
+        cout << "\nVector is not empty";
+    else
+        cout << "\nVector is empty";
     cout<<"\nYour number = ";
     for(auto i=ver.begin();i !=ver.end();i++)
     {
@@ -27,3 +31,6 @@ int main()
     }
     return 0;
 }
+
+OUTPUT :- 
+Depends on user input
