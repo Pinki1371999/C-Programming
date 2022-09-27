@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int s=0,t=0,u=0,v=0,w=0,x=0,y=0,z=0,all=0;
+int A[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+for(int i=0;i<3;i++)
+{
+    for(int j=0;j<3;j++)
+    {
+        all=all+A[i][j];
+        if(i==j)
+            s=s+A[i][j];
+        if(i+j==2)
+            t=t+A[i][j];
+        if(i==0)
+            u=u+A[i][j];
+        if(i==1)
+            v=v+A[i][j]; 
+        if(i==2)
+            w=w+A[i][j];  
+        if(j==0)
+            x=x+A[i][j];
+        if(j==1)
+            y=y+A[i][j]; 
+        if(j==2)
+            z=z+A[i][j];
+    }
+    
+}
+      
+cout<<"Sum of left diognal = "<<s;
+cout<<"\nSum of right diognal = "<<t;
+cout<<"\nSum of first row = "<<u;
+cout<<"\nSum of second row = "<<v;
+cout<<"\nSum of third row = "<<w;
+cout<<"\nSum of first column = "<<x;
+cout<<"\nSum of second column = "<<y;
+cout<<"\nSum of third column = "<<z;
+cout<<"\nSum of all ="<<all;
+    return 0;
+}
+
+OUTPUT
+Sum of left diognal = 15
+Sum of right diognal = 15
+Sum of first row = 6
+Sum of second row = 15
+Sum of third row = 24
+Sum of first column = 12
+Sum of second column = 15
+Sum of third column = 18
+Sum of all =45
